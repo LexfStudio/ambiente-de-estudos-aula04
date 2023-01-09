@@ -1,0 +1,101 @@
+@media (max-width: 7680px){
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #009290;
+    }
+
+    /* Configuração do cabeçalho: Begin */
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-image: linear-gradient(#004C59, #009290);
+    }
+        #logo {
+            display: flex;
+            justify-content: center;
+        }
+        /* Menu principal: Begin */
+        #nav-main-body {
+            display: flex;
+            margin: 0 22%;
+            background-color: #004C59;
+            border: 1px solid #022329;
+        }
+        #nav-main-body button {
+            margin: 0;
+            padding: 15px;
+            cursor: pointer;
+            background-color: #004C59;
+            border: 1px solid #022329;
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+        }
+        #nav-main-grp-desktop {
+            display: flex;
+        }
+        #nav-main-btn-mobile {
+            display: none;
+        }
+        #nav-main-body button:hover {
+            background-color: #00404b;
+        }
+        #nav-main-body button a {
+            text-decoration: none;
+            color: #E9C709;
+        }
+        /* ----------- MOBILE ----------- */
+        .nav-main-span-dashes::before {
+            display: block;
+            content: '';
+            width: 20px;
+            height: 5px;
+            border-bottom: 2px solid #E9C709;            
+        }
+        .nav-main-span-dashes {
+            display: block;
+            width: 20px;
+            border-top: 2px solid #E9C709;
+            margin: 0;
+        }
+        .nav-main-span-dashes::after {
+            display: block;
+            content: '';
+            width: 20px;
+            height: 5px;
+            border-bottom: 2px solid #E9C709;            
+        }
+        /* Menu principal: End */
+    /* Configuração do cabeçalho: End */
+    
+    /* Configuração do conteúdo principal das páginas: Begin */
+    main {
+        width: auto;
+        height: auto;
+        min-height: calc(100vh - 278px);
+        margin: 0 22%;
+        padding: 15px;
+        background-color: #FFFFFF;
+        border-right: 1px solid #022329;
+        border-bottom: 1px solid #022329;
+        border-left: 1px solid #022329;
+    }
+    /* Configuração do conteúdo principal das páginas: End */
+
+    /* Configuração do rodapé: Begin */
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        padding: 15px;
+        color: #CEE8E8;
+        background-color: #004C59;
+        border-top: 1px solid #022329;
+    }
+    /* Configuração do rodapé: End */
+   
+} 
